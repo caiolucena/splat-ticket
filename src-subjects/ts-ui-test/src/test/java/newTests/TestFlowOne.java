@@ -25,7 +25,7 @@ import com.btmatthews.selenium.junit4.runner.SeleniumJUnit4ClassRunner;
 
 import utils.CheckAlert;
 
-public class TestFlowOne extends TestServiceLogin {
+public class TestFlowOne {
 	private WebDriver driver;
 	private String trainType;// 0--all,1--GaoTie,2--others
 	private String baseUrl;

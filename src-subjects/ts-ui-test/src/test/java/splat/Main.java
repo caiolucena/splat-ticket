@@ -11,7 +11,7 @@ import trie.TrieST;
 public class Main {
 
 	public static void main(String[] args) throws Exception {
-		PrintStream log = new PrintStream(new File("results_gpl.txt"));
+		PrintStream log = new PrintStream(new File("results_trainticket.txt"));
 		String dataPath = (new java.io.File("./../..")).getCanonicalPath().toString() + "/data/valid/";
 
 		/***** SPLat *****/

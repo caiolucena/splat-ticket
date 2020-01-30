@@ -47,9 +47,6 @@ public class SPLat {
 	public List<CacheEntry> cache;// NEW
 	String confDefault;
 	Stats stats;
-	/**
-	 * fields
-	 */
 
 	private Variables vars;
 
@@ -92,6 +89,10 @@ public class SPLat {
 						}
 					}
 					if (annotation != null) {
+						//transformar o arquivo com os testes em uma lista
+						//Criar um processo chamando cada linha
+						//armazenar o resultado da chamada dos testes
+						//
 						// run splat for each test
 						if(Sampling.mode == Mode.PAIRWISE){
 							pw = new Pairwise(vars);

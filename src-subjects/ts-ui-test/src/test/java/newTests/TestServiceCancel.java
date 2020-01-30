@@ -65,14 +65,7 @@ public class TestServiceCancel {
         System.out.println("Cancel Refund Btn status:"+statusCancelRefundBtn);
         Assert.assertEquals(!"".equals(statusCancelRefundBtn), true);
     }
-    @Test (dependsOnMethods = {"testCheckRefund"})
-    public void testTicketCancel() throws Exception {
-        driver.findElement(By.id("single_cancel_button")).click();
-        Thread.sleep(1000);
-        String statusCancelOrderResult = driver.findElement(By.id("single_cancel_order_result")).getText();
-        System.out.println("Do Cancel Btn status:"+statusCancelOrderResult);
-        Assert.assertEquals(statusCancelOrderResult.startsWith("Success"), true);
-    }
+    
     @AfterClass
     public void tearDown() throws Exception {
         driver.quit();
